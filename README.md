@@ -1,3 +1,8 @@
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Approvio-Team_approvio&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Approvio-Team_approvio)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=Approvio-Team_approvio&metric=bugs)](https://sonarcloud.io/summary/new_code?id=Approvio-Team_approvio)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=Approvio-Team_approvio&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=Approvio-Team_approvio)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=Approvio-Team_approvio&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=Approvio-Team_approvio)
+
 # Approvio
 
 **Approvio** ist ein webbasiertes, quelloffenes Antragssystem für Fördervereine – entwickelt mit dem Ziel, die Bearbeitung von Förderanträgen transparenter, strukturierter und kollaborativer zu gestalten.
@@ -42,7 +47,7 @@ Viele Vereine arbeiten noch mit analogen Formularen, E-Mail-Verläufen und münd
 ## 🧩 Funktionsüberblick (geplant / in Entwicklung)
 
 | Bereich              | Funktion                                              | Status     |
-|----------------------|--------------------------------------------------------|------------|
+|----------------------|-------------------------------------------------------|------------|
 | Antragstellung       | Öffentliche Antragseinreichung ohne Login             | 🟢 geplant |
 | Dateiupload          | Anhänge wie PDFs oder Bilder hochladen                | 🟢 geplant |
 | Benachrichtigung     | E-Mail-Benachrichtigung an Vorstandsmitglieder        | 🟢 geplant |
@@ -110,4 +115,3 @@ Pull Requests, Verbesserungsvorschläge, Fehlerberichte und Ideen sind herzlich 
 Wenn du das Projekt gut findest oder es in deinem Verein einsetzen möchtest:  
 ⭐️ Sternchen geben, teilen, Feedback geben – oder ein Issue öffnen!  
 Danke für dein Interesse an **Approvio**.
-
