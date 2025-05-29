@@ -1,9 +1,23 @@
-                    GNU GENERAL PUBLIC LICENSE
-                       Version 3, 29 June 2007
+GNU GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
 
- Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
- Everyone is permitted to copy and distribute verbatim copies
- of this license document, but changing it is not allowed.
+Copyright (C) 2025 Christoph Blechschmitt
+
+Everyone is permitted to copy and distribute verbatim copies
+of this license document, but changing it is not allowed.
+
+--- BEGIN ADDITIONAL RESTRICTION ---
+
+As permitted under Section 7 of the GNU General Public License v3,
+the following additional restriction applies to this software:
+
+**Commercial use is not permitted.**
+
+You may use, modify, and distribute this software under the terms of the GPLv3 **only for non-commercial purposes**. Any commercial use, resale, sublicensing, or monetization of the software or its derivatives is strictly prohibited without explicit written permission from the original author(s).
+
+If you wish to use this software commercially, please contact the author to obtain a separate commercial license.
+
+--- END ADDITIONAL RESTRICTION ---
 
                             Preamble
 
