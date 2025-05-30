@@ -1,0 +1,39 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '7.4'
+        extensions: mbstring, intl
+        tools: composer:v2
+
+    - name: Install dependencies
+      run: composer install --prefer-dist --no-dev --optimize-autoloader
+
+    - name: Create release zip
+      run: |
+        mkdir -p build
+        zip -r build/approvio-${GITHUB_REF#refs/tags/v}.zip . -x "*.git*" "tests/*" "*.editorconfig" "*.gitignore" "build/*" "phpunit.xml*" "phpcs.xml*" "phpstan.*" "phpmd.xml"
+
+    - name: Create GitHub release
+      id: create_release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: build/approvio-${GITHUB_REF#refs/tags/v}.zip
+        draft: false
+        prerelease: false
+        generate_release_notes: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,33 @@
+version: 2
+updates:
+  - package-ecosystem: "composer"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    target-branch: "develop"
+    labels:
+      - "dependencies"
+      - "automerge"
+    assignees:
+      - "Approvio-Team"
+    reviewers:
+      - "Approvio-Team"
+    commit-message:
+      prefix: "composer"
+      include: "scope"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 5
+    target-branch: "develop"
+    labels:
+      - "dependencies"
+      - "automerge"
+    assignees:
+      - "Approvio-Team"
+    commit-message:
+      prefix: "github-actions"
+      include: "scope"
