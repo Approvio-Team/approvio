@@ -76,6 +76,11 @@ Ziel ist eine **einfach zu betreibende Anwendung**, die mit wenigen Konfiguratio
 
 > ⚠️ Noch in Entwicklung – Setup-Skripte und Dockerfile folgen.
 
+    cd ./approvio
+    cp .env.herd .env
+    composer install && npm i && php artisan migrate
+    npm run dev
+
 ---
 
 ## 🛡️ Lizenz
