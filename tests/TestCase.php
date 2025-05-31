@@ -1,32 +1,11 @@
 <?php
 
-namespace Approvio\Tests;
+namespace Tests;
 
-use PHPUnit\Framework\TestCase as BaseTestCase;
+use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
 
-/**
- * Basis-Testklasse für alle Approvio-Tests
- */
-class TestCase extends BaseTestCase
+abstract class TestCase extends BaseTestCase
 {
-    /**
-     * Gemeinsame Setup-Funktionalität für alle Tests
-     */
-    protected function setUp(): void
-    {
-        parent::setUp();
-        // Hier können gemeinsame Setup-Schritte für alle Tests erfolgen
-    }
-
-    /**
-     * Gemeinsame Teardown-Funktionalität für alle Tests
-     */
-    protected function tearDown(): void
-    {
-        // Hier können gemeinsame Cleanup-Schritte für alle Tests erfolgen
-        parent::tearDown();
-    }
-
     /**
      * Hilfsmethode zum Erstellen eines temporären Verzeichnisses für Tests
      */
